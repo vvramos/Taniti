@@ -11,7 +11,7 @@ const heroContainer = document.querySelector(".hero");
 function slideImage(direction) {
   if (isSliding) return;
   isSliding = true;
-  
+
   const oldImage = document.querySelector(".hero-img");
 
   let newIndex = direction === "prev"
@@ -21,20 +21,23 @@ function slideImage(direction) {
   const newImage = document.createElement("img");
   newImage.src = images[newIndex];
   newImage.classList.add("hero-img");
-  
+
   newImage.style.transform = direction === "prev" ? "translateX(-100%)" : "translateX(100%)";
   heroContainer.appendChild(newImage);
+
+  newImage.getBoundingClientRect();
 
   requestAnimationFrame(() => {
     oldImage.style.transform = direction === "prev" ? "translateX(100%)" : "translateX(-100%)";
     newImage.style.transform = "translateX(0)";
   });
 
-  setTimeout(() => {
+  oldImage.addEventListener("transitionend", function cleanup() {
     oldImage.remove();
     currentIndex = newIndex;
     isSliding = false;
-  }, 800);
+    oldImage.removeEventListener("transitionend", cleanup);
+  });
 }
 
 document.getElementById("left-arrow-img").addEventListener("click", () => slideImage("prev"));
