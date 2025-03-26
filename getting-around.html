@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting Around</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="Images/Icons/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!--Header-->
+    <header>
+      <div class="header">
+        <div class="logo-container">
+          <a href="index.html"><img id="logo" src="Images/Logo.png" alt="Taniti Logo" /></a>
+        </div>
+
+        <nav>
+          <ul>
+            <li class="nav-item" data-submenu="stay-menu"><a href="where-to-stay.html">WHERE TO STAY</a></li>
+            <li class="nav-item" data-submenu="todo-menu"><a href="things-to-do.html">THINGS TO DO</a></li>
+            <li class="nav-item" data-submenu="trans-menu"><a href="getting-around.html">GETTING AROUND</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </nav>
+
+        <div class="search-icon-container">
+          <img id="search-icon" onclick="toggleSearch(event)" src="Images/Icons/icon-search.svg" />
+        </div>
+      </div>
+
+      <div class="subheaders">
+        <div class="subheader-stay submenu hidden" id="stay-menu">
+          <h3 class="subheader-heading">ACCOMODATIONS</h3>
+          <div class="subheader-links">
+            <a href="where-to-stay.html#resort">Resorts</a>
+            <a href="where-to-stay.html#hotel">Hotels</a>
+            <a href="where-to-stay.html#b&b">Bed and Breakfasts</a>
+            <a href="where-to-stay.html#hostel">Hostels</a>
+          </div>
+        </div>
+
+        <div class="subheader-todo submenu hidden" id="todo-menu">
+          <h3 class="subheader-heading">THINGS TO DO</h3>
+          <div class="subheader-links">
+            <a href="things-to-do.html#beaches">Beaches & Nature</a>
+            <a href="things-to-do.html#attractions">Attractions</a>
+            <a href="things-to-do.html#outdoor">Outdoor Adventures</a>
+            <a href="things-to-do.html#eat">Eat & Drink</a>
+          </div>
+        </div>
+
+        <div class="subheader-trans submenu hidden" id="trans-menu">
+          <div class="subheader-to">
+            <h3 class="subheader-heading">GETTING TO TANITI</h3>
+            <div class="subheader-trans-links1">
+              <a href="getting-around.html#airport">Airport</a>
+              <a href="getting-around.html#ship">Cruise Ship</a>
+            </div>
+          </div>
+          <div class="subheader-around">
+            <h3 class="subheader-heading">AROUND TANITI</h3>
+            <div class="subheader-trans-links2">
+              <a href="getting-around.html#buses">Buses</a>
+              <a href="getting-around.html#taxis">Taxis</a>
+              <a href="getting-around.html#bikes">Bikes</a>
+              <a href="getting-around.html#rental-cars">Rental Cars</a>
+              <a href="getting-around.html#shuttle">Hotel Shuttle</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="search-menu hidden">
+        <form class="search-form" action="" method="get">
+          <label for="search-input">Start typing to Search</label>
+          <div class="search-bar">
+            <input type="text" id="search-input" name="search-input" placeholder="Search" />
+            <img id="search-icon-pink" src="Images/Icons/icon-search-pink.svg" />
+          </div>
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <!--Submenu Nav-->
+      <section class="transportation-submenu">
+        <h3>Jump to Section:</h3>
+        <div class="menu">
+          <div class="to-submenu">
+            <h2>To the Island</h2>
+            <ul>
+              <li><a href="#airport">Airport</a></li>
+              <li><a href="#ship">Cruise Ship</a></li>
+            </ul>
+          </div>
+
+          <div class="around-submenu">
+            <h2>Around the Island</h2>
+            <ul>
+              <li><a href="#buses">Public Buses</a></li>
+              <li><a href="#taxis">Taxis</a></li>
+              <li><a href="#bikes">Bike Rentals</a></li>
+              <li><a href="#rental-cars">Rental Cars</a></li>
+              <li><a href="#shuttle">Hotel Shuttle</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!--To the Island Section-->
+      <section class="transportation">
+        <div id="airport">
+          <h1>Airport</h1>
+          <p><span class="bold">Taniti International Airport</span></p>
+          <div class="trans-text">
+            <p><span class="bold">Address:</span> 100 Airstrip Rd, Taniti City, Taniti</p>
+            <p><span class="bold">Hours:</span> Open daily, 5:00 AM - 11:00 PM</p>
+            <p><span class="bold">Phone:</span> (555) 123-4567</p>
+            <p><span class="bold">Info:</span> Taniti International Airport serves small jets and propeller planes. Expansion plans are underway to accommodate larger jets. The airport offers a small lounge, a café, and free Wi-Fi. Rental car services and taxis are available just outside the terminal.</p>
+          </div>
+        </div>
+
+        <div id="ship">
+          <h1>Cruise Ship</h1>
+          <p><span class="bold">Yellow Leaf Bay Cruise Dock</span></p>
+          <div class="trans-text">
+            <p><span class="bold">Address:</span> 200 Portside Ln, Merriton Landing, Taniti</p>
+            <p><span class="bold">Hours:</span> Wednesdays, 6:00 AM - 11:00 PM</p>
+            <p><span class="bold">Phone:</span> (555) 234-5678</p>
+            <p><span class="bold">Info:</span> A small cruise ship arrives once a week, allowing passengers to explore Taniti for a full day. Visitors can find taxis and bike rentals near the dock for easy transportation.</p>
+          </div>
+        </div>
+      </section>
+
+      <!--Around the Island Section-->
+      <section class="transportation">
+        <div id="buses">
+          <h1>Public Buses</h1>
+          <p><span class="bold">Taniti City Bus Terminal</span></p>
+          <div class="trans-text">
+            <p><span class="bold">Address:</span> 50 Transit Ave, Taniti City, Taniti</p>
+            <p><span class="bold">Taniti City Route:</span> 5:00 AM - 11:00 PM (Every 15 minutes)</p>
+            <p><span class="bold">Island-Wide Routes:</span> 6:00 AM - 10:00 PM (Every 30 minutes)</p>
+            <p><span class="bold">Fare:</span> $2 per ride, $10 for a day pass</p>
+            <p><span class="bold">Phone:</span> (555) 345-6789</p>
+            <p><span class="bold">Info:</span> Public buses cover Taniti City and major tourist areas. Private buses connect to remote parts of the island. Exact fare required; cash and major cards accepted.</p>
+          </div>
+        </div>
+
+        <div id="taxis">
+          <h1>Taxis</h1>
+          <p><span class="bold">Taniti Taxi Services</span></p>
+          <div class="trans-text">
+            <p><span class="bold">Address:</span> 15 Harbor St, Taniti City, Taniti</p>
+            <p><span class="bold">Availability:</span> 24/7</p>
+            <p><span class="bold">Phone:</span> (555) 456-7890</p>
+            <p><span class="bold">Info:</span> Taxis are available in Taniti City and at major tourist spots. Standard fare starts at $5, with an additional $2 per mile. Rides can be booked via phone or hailed on the street.</p>
+          </div>
+        </div>
+
+        <div id="bikes">
+          <h1>Bike Rentals</h1>
+          <p><span class="bold">Taniti Bikes</span></p>
+          <div class="trans-text">
+            <p><span class="bold">Address:</span> 80 Seaside Blvd, Merriton Landing, Taniti</p>
+            <p><span class="bold">Hours:</span> 7:00 AM - 7:00 PM</p>
+            <p><span class="bold">Rates:</span> $10/hour, $30/day (Helmet included)</p>
+            <p><span class="bold">Phone:</span> (555) 567-8901</p>
+            <p><span class="bold">Info:</span> Explore the island on two wheels! Helmets are required by law. Taniti City and Merriton Landing are bike-friendly, with scenic paths along the coast.</p>
+          </div>
+        </div>
+
+        <div id="rental-cars">
+          <h1>Rental Cars</h1>
+          <p><span class="bold">Taniti Island Car Rentals</span></p>
+          <div class="trans-text">
+            <p><span class="bold">Address:</span> 5 Airport Rd, Taniti City, Taniti</p>
+            <p><span class="bold">Hours:</span> 6:00 AM – 10:00 PM</p>
+            <p><span class="bold">Rates:</span> Starting at $50/day</p>
+            <p><span class="bold">Phone:</span> (555) 678-9012</p>
+            <p><span class="bold">Info:</span> A variety of rental cars are available near the airport. Drivers must be 21+ with a valid license. Reservations are recommended during peak season.</p>
+          </div>
+        </div>
+
+        <div id="shuttle">
+          <h1>Hotel Shuttle</h1>
+          <p><span class="bold">Taniti Resort Shuttle Service</span></p>
+          <div class="trans-text">
+            <p><span class="bold">Address:</span> Various hotel locations</p>
+            <p><span class="bold">Hours:</span> 6:00 AM – 11:00 PM (Every 30 minutes)</p>
+            <p><span class="bold">Phone:</span> (555) 789-0123</p>
+            <p><span class="bold">Info:</span> Many hotels provide complimentary shuttle services between the airport, downtown, and key attractions. Check with your hotel for specific routes and schedules.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="social-links">
+        <div class="social-container">
+          <a href="https://www.facebook.com/tanitiisland/" target="_blank"><img src="Images/Icons/icon-facebook.svg" alt="Facebook" /></a>
+          <a href="https://www.facebook.com/tanitiisland/" target="_blank">Facebook</a>
+        </div>
+        <div class="social-container">
+          <a href="https://www.instagram.com/tanitiisland/" target="_blank"><img src="Images/Icons/icon-instagram.svg" alt="Instagram" /></a>
+          <a href="https://www.instagram.com/tanitiisland/" target="_blank">Instagram</a>
+        </div>
+        <div class="social-container">
+          <a href="https://www.pinterest.com/tanitiisland/" target="_blank"><img src="Images/Icons/icon-pinterest.svg" alt="Pinterest" /></a>
+          <a href="https://www.pinterest.com/tanitiisland/" target="_blank">Pinterest</a>
+        </div>
+        <div class="social-container">
+          <a href="https://x.com/tahitiisland" target="_blank"><img src="Images/Icons/icon-twitter.svg" alt="Twitter" /></a>
+          <a href="https://x.com/tahitiisland" target="_blank">Twitter</a>
+        </div>
+        <div class="social-container">
+          <a href="https://www.youtube.com/@TanitiIsland" target="_blank"><img src="Images/Icons/icon-youtube.svg" alt="Youtube" /></a>
+          <a href="https://www.youtube.com/@TanitiIsland" target="_blank">Youtube</a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>© 2025 VISIT TANITI</p>
+      </div>
+    </footer>
+
+    <script src="scripts/header.js"></script>
+  </body>
+</html>

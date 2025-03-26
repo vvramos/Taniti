@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Where To Stay</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="Images/Icons/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!--Header-->
+    <header>
+      <div class="header">
+        <div class="logo-container">
+          <a href="index.html"><img id="logo" src="Images/Logo.png" alt="Taniti Logo" /></a>
+        </div>
+
+        <nav>
+          <ul>
+            <li class="nav-item" data-submenu="stay-menu"><a href="where-to-stay.html">WHERE TO STAY</a></li>
+            <li class="nav-item" data-submenu="todo-menu"><a href="things-to-do.html">THINGS TO DO</a></li>
+            <li class="nav-item" data-submenu="trans-menu"><a href="getting-around.html">GETTING AROUND</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </nav>
+
+        <div class="search-icon-container">
+          <img id="search-icon" onclick="toggleSearch(event)" src="Images/Icons/icon-search.svg" />
+        </div>
+      </div>
+
+      <div class="subheaders">
+        <div class="subheader-stay submenu hidden" id="stay-menu">
+          <h3 class="subheader-heading">ACCOMODATIONS</h3>
+          <div class="subheader-links">
+            <a href="where-to-stay.html#resort">Resorts</a>
+            <a href="where-to-stay.html#hotel">Hotels</a>
+            <a href="where-to-stay.html#b&b">Bed and Breakfasts</a>
+            <a href="where-to-stay.html#hostel">Hostels</a>
+          </div>
+        </div>
+
+        <div class="subheader-todo submenu hidden" id="todo-menu">
+          <h3 class="subheader-heading">THINGS TO DO</h3>
+          <div class="subheader-links">
+            <a href="things-to-do.html#beaches">Beaches & Nature</a>
+            <a href="things-to-do.html#attractions">Attractions</a>
+            <a href="things-to-do.html#outdoor">Outdoor Adventures</a>
+            <a href="things-to-do.html#eat">Eat & Drink</a>
+          </div>
+        </div>
+
+        <div class="subheader-trans submenu hidden" id="trans-menu">
+          <div class="subheader-to">
+            <h3 class="subheader-heading">GETTING TO TANITI</h3>
+            <div class="subheader-trans-links1">
+              <a href="getting-around.html#airport">Airport</a>
+              <a href="getting-around.html#ship">Cruise Ship</a>
+            </div>
+          </div>
+          <div class="subheader-around">
+            <h3 class="subheader-heading">AROUND TANITI</h3>
+            <div class="subheader-trans-links2">
+              <a href="getting-around.html#buses">Buses</a>
+              <a href="getting-around.html#taxis">Taxis</a>
+              <a href="getting-around.html#bikes">Bikes</a>
+              <a href="getting-around.html#rental-cars">Rental Cars</a>
+              <a href="getting-around.html#shuttle">Hotel Shuttle</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="search-menu hidden">
+        <form class="search-form" action="" method="get">
+          <label for="search-input">Start typing to Search</label>
+          <div class="search-bar">
+            <input type="text" id="search-input" name="search-input" placeholder="Search" />
+            <img id="search-icon-pink" src="Images/Icons/icon-search-pink.svg" />
+          </div>
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <!--Accomodations-->
+      <section class="accomodations">
+        <div class="card" id="resort">
+          <div class="card-img-container">
+            <img src="Images/stay1-resort.jpeg" />
+          </div>
+          <div class="card-text-container">
+            <div class="title-container">
+              <h2>Four Star Resort</h2>
+              <a class="book-btn" href="faketanitihotel.com" target="_blank">Book</a>
+            </div>
+            <div class="address-container">
+              <div>
+                <img src="Images/Icons/icon-map.svg" alt="Map marker" />
+              </div>
+              <div>
+                <p>123 Fake St</p>
+                <p>Taniti City, Taniti 98714</p>
+              </div>
+            </div>
+            <div class="site-container">
+              <a href="faketanitihotel.com" target="_blank">Visit Website</a>
+              <p>$$$</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" id="hotel">
+          <div class="card-img-container">
+            <img src="Images/stay2-hotel.webp" />
+          </div>
+          <div class="card-text-container">
+            <div class="title-container">
+              <h2>Hotel</h2>
+              <a class="book-btn" href="faketanitihotel.com" target="_blank">Book</a>
+            </div>
+            <div class="address-container">
+              <div>
+                <img src="Images/Icons/icon-map.svg" alt="Map marker" />
+              </div>
+              <div>
+                <p>123 Fake St</p>
+                <p>Taniti City, Taniti 98714</p>
+              </div>
+            </div>
+            <div class="site-container">
+              <a href="faketanitihotel.com" target="_blank">Visit Website</a>
+              <p>$$</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" id="b&b">
+          <div class="card-img-container">
+            <img src="Images/stay3-b&b.jpeg" />
+          </div>
+          <div class="card-text-container">
+            <div class="title-container">
+              <h2>Bed and Breakfast</h2>
+              <a class="book-btn" href="faketanitihotel.com" target="_blank">Book</a>
+            </div>
+            <div class="address-container">
+              <div>
+                <img src="Images/Icons/icon-map.svg" alt="Map marker" />
+              </div>
+              <div>
+                <p>123 Fake St</p>
+                <p>Taniti City, Taniti 98714</p>
+              </div>
+            </div>
+            <div class="site-container">
+              <a href="faketanitihotel.com" target="_blank">Visit Website</a>
+              <p>$$</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" id="hostel">
+          <div class="card-img-container">
+            <img src="Images/stay4-hostel.png" />
+          </div>
+          <div class="card-text-container">
+            <div class="title-container">
+              <h2>Hostel</h2>
+              <a class="book-btn" href="faketanitihotel.com" target="_blank">Book</a>
+            </div>
+            <div class="address-container">
+              <div>
+                <img src="Images/Icons/icon-map.svg" alt="Map marker" />
+              </div>
+              <div>
+                <p>123 Fake St</p>
+                <p>Taniti City, Taniti 98714</p>
+              </div>
+            </div>
+            <div class="site-container">
+              <a href="faketanitihotel.com" target="_blank">Visit Website</a>
+              <p>$</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="social-links">
+        <div class="social-container">
+          <a href="https://www.facebook.com/tanitiisland/" target="_blank"><img src="Images/Icons/icon-facebook.svg" alt="Facebook" /></a>
+          <a href="https://www.facebook.com/tanitiisland/" target="_blank">Facebook</a>
+        </div>
+        <div class="social-container">
+          <a href="https://www.instagram.com/tanitiisland/" target="_blank"><img src="Images/Icons/icon-instagram.svg" alt="Instagram" /></a>
+          <a href="https://www.instagram.com/tanitiisland/" target="_blank">Instagram</a>
+        </div>
+        <div class="social-container">
+          <a href="https://www.pinterest.com/tanitiisland/" target="_blank"><img src="Images/Icons/icon-pinterest.svg" alt="Pinterest" /></a>
+          <a href="https://www.pinterest.com/tanitiisland/" target="_blank">Pinterest</a>
+        </div>
+        <div class="social-container">
+          <a href="https://x.com/tahitiisland" target="_blank"><img src="Images/Icons/icon-twitter.svg" alt="Twitter" /></a>
+          <a href="https://x.com/tahitiisland" target="_blank">Twitter</a>
+        </div>
+        <div class="social-container">
+          <a href="https://www.youtube.com/@TanitiIsland" target="_blank"><img src="Images/Icons/icon-youtube.svg" alt="Youtube" /></a>
+          <a href="https://www.youtube.com/@TanitiIsland" target="_blank">Youtube</a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>© 2025 VISIT TANITI</p>
+      </div>
+    </footer>
+
+    <script src="scripts/header.js"></script>
+  </body>
+</html>
