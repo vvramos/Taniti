@@ -1,5 +1,5 @@
 const faqArray = [
-  {question: "What kind of power outlets does Taniti have?",
+  {question: "Can I use my phone charger there?",
     answer: "Power outlets are 120 volts (the same as in the United States).",
     id: 1
   },
@@ -11,7 +11,7 @@ const faqArray = [
     answer: "The drinking age on Taniti is 18 and the drinking age is not strictly enforced.",
     id: 3
   },
-  {question: "Do people in Taniti speak English?",
+  {question: "Is English spoken in Taniti?",
     answer: "Many younger Tanitians speak fluent English. Very little English is spoken in rural areas, especially by the older residents.",
     id: 4
   },
